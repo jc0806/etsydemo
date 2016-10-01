@@ -5,7 +5,7 @@
     <th class="center">Description</th>
     <th class="center">Price</th> 
     <th class="center">Action</th>
-    <br>
+    
   </tr>
 
   <% @listings.each do |listing| %>
@@ -15,7 +15,6 @@
       <td><%= listing.description %></td>
       <td><%= number_to_currency(listing.price) %></td>
       <td>
-        <td>
           <div class="btn-group">
             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
               Action <span class="caret"></span>
@@ -27,7 +26,6 @@
             </ul>
           </div>
         </td>
-      </td>
     </tr>
   <% end %>
 </table>
